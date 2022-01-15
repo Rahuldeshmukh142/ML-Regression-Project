@@ -1,5 +1,5 @@
 # ML-Regression-Project
-1. Problem Statement 
+1**.** Problem Statement ****
 This challenge asks you to build a model that predicts the number of seats that Mobi ticket can expect to sell for each ride, i.e., for a specific route on a specific date and time. There are 14 routes in this dataset. All of the route’s end in Nairobi and originate in towns to the North-West of Nairobi towards Lake Victoria.
 The towns from which these routes originate are:
 ●	Awendo
@@ -27,18 +27,18 @@ The three stops that all these routes make in Nairobi (in order) are:
 All of these points are mapped here.
 Passengers of these bus (or shuttle) rides are affected by Nairobi traffic not only during their ride into the city, but from there they must continue their journey to their final destination in Nairobi wherever that may be. Traffic can act as a deterrent for those who have the option to avoid buses that arrive in Nairobi during peak traffic hours. On the other hand, traffic may be an indication for people’s movement patterns, reflecting business hours, cultural events, political events, and holidays.
 
-To analysis and predict the above given database, the current project is developed.
-2. Introduction
+**To analysis and predict the above given database, the current project is developed.****
+**2. Introduction****
 Nairobi is one of the most heavily congested cities in Africa. Each day thousands of Kenyans make the trip into Nairobi from towns such as Kisii, Keroka, and beyond for work, business, or to visit friends and family. The journey can be long, and the final approach into the city can impact the length of the trip significantly depending on traffic. How do traffic patterns influence people’s decisions to come into the city by bus and which bus to take? Does knowing the traffic patterns in Nairobi help anticipate the demand for particular routes at particular times?
 The aim is to create a predictive model using traffic data provided from Uber Movement and historic bus ticket sales data from Mobi ticket to predict the number of tickets that will be sold for buses into Nairobi from cities in "up country" Kenya.
 Nairobi Transport Data.csv (zipped) is the dataset of tickets purchased from Mobi ticket for the 14 routes from “up country” into Nairobi between 17 October 2017 and 20 April 2018. This dataset includes the variables: ride id, seat number, payment method, payment receipt, travel date, travel time, travel from, travel to, car type, max capacity.
 Uber Movement traffic data can be accessed here. Data is available for Nairobi through June 2018. Uber Movement provided historic hourly travel time between any two points in Nairobi. Any tables that are extracted from the Uber Movement platform can be used in your model.
 
-3. Understanding the Problem Statement
+**3. Understanding the Problem Statement**
 The data used to train the model will be historic hourly traffic patterns in Nairobi and historic ticket purchasing data for 14 bus routes into Nairobi from October 2017 to April 2018, and includes the place or origin, the scheduled time of departure, the channel used for the purchase, the type of vehicle, the capacity of the vehicle, and the assigned seat number.
 This resulting model can be used by Mobi ticket and bus operators to anticipate customer demand for certain rides, to manage resources and vehicles more efficiently, to offer promotions and sell other services more effectively, such as micro-insurance, or even improve customer service by being able to send alerts and other useful information to customers.
 Some of the key attributes consisting those variables which are used for this project are listed below:
-Attributes and their Description
+**Attributes and their Description**
 ●	Ride id: unique ID of a vehicle on a specific route on a specific day and time.
 ●	Seat number: seat assigned to ticket
 ●	Payment method: method used by customer to purchase ticket from Mobi ticket (cash or Mpesa)
@@ -50,14 +50,14 @@ Attributes and their Description
 ●	Car type: vehicle type (shuttle or bus)
 ●	Max capacity: number of seats on the vehicle
 
-4. Data Pre-processing
+4.** Data Pre-processing**
 Before jumping to the exploration stage, we need to perform basic data pre-processing steps like null value imputation and removal of unwanted data.
 
  4.1. Libraries Used
         Pandas, NumPy, Matplotlib, Seaborn, Sklearn
 import NumPy as np
 import pandas as pd
-# For visualizations
+# For visualizations	
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
@@ -85,6 +85,10 @@ We need to first remove the constant features. In this dataset the destination i
                It computes a summary of statistics pertaining to the Data Frame columns. This function gives the mean, std and IQR values. And, function excludes the character columns and gives a summary about numeric columns.
  6.3. Analysis of different variables 
 6.3.1. Analyzing the payment method
+ 
+![image](https://user-images.githubusercontent.com/80576672/149616219-258aa055-d43e-4158-90b5-596a886ac1a9.png)
+
+
  
 Travelers have used 2 types of payment method. They are Mpesa and cash. And the most of the people have used Mpesa to pay for their ticket.
 
