@@ -92,9 +92,14 @@ We need to first remove the constant features. In this dataset the destination i
  
 Travelers have used 2 types of payment method. They are Mpesa and cash. And the most of the people have used Mpesa to pay for their ticket.
 
+![image](https://user-images.githubusercontent.com/80576672/149616238-1964a81b-2ba5-42e0-ac00-91a3ee03eb0c.png)
+
+
 6.3.2. Analyzing the vehicle type used by the customer and number of seats on the vehicle sell
  
- 
+ ![image](https://user-images.githubusercontent.com/80576672/149616248-54720d5a-88c5-42f0-86bb-6fe246dcb892.png)
+![image](https://user-images.githubusercontent.com/80576672/149616249-ba3ef686-39f9-429a-82c8-2495a17f2a1a.png)
+
  
 There are totally 61 unique seats in this dataset.
 The record of 149 unique days is present in this dataset out of 2 years.
@@ -109,21 +114,28 @@ There are two type of cars Bus and shuttle and the maximum capacity of the bus i
 
 
 6.3.3. Analyzing the travel from town from which ride originated
+ ![image](https://user-images.githubusercontent.com/80576672/149616263-f9241ed4-823a-4bae-bf7f-55ab125320f6.png)
+
  
 Most customers travel from Kisii town to Nairobi.
 
 6.3.4. Analyzing the number of seats during the period using bar graph
  
+![image](https://user-images.githubusercontent.com/80576672/149616268-cf3c4b64-1419-4f53-afcc-c192639f7d57.png)
 
- 
+ ![image](https://user-images.githubusercontent.com/80576672/149616272-b39f7dfb-6b27-462b-b3cb-abb27e3cbd52.png)
+
 
 Correlation 
 
- 
+ ![image](https://user-images.githubusercontent.com/80576672/149616274-2ae3d98a-833f-44c3-ad97-db80363139db.png)
+
 
 Scatter plot of number of tickets sold to customers from different cities
 
- 
+ ![image](https://user-images.githubusercontent.com/80576672/149616277-d9754768-bb26-462e-a820-371a4287c2db.png)
+
+![image](https://user-images.githubusercontent.com/80576672/149616285-edc312f6-17a1-4a15-82ff-1c6c872840dd.png)
 
 7. Feature Engineering
  
@@ -160,7 +172,10 @@ Random Forest Regressor:
 XG boost Regressor:
 Scatter plot of test and predicted values
  
- 
+ ![image](https://user-images.githubusercontent.com/80576672/149616311-8b8e27f0-b7f6-4f75-bb58-30416947d2e8.png)
+
+![image](https://user-images.githubusercontent.com/80576672/149616314-e0bb315f-f2c3-4f7a-a90c-b862c62529d7.png)
+
 
 9. Evaluating the model
 After the model is built, if we see that the difference in the values of the
